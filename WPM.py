@@ -65,7 +65,7 @@ def wpm_test(stdscr):
         elif len(current_text) < len(target_text):
                 current_text.append(key)
 
-        stdscr.refresh()
+        #stdscr.refresh()
 
 def main(stdscr):
     curses.init_pair(1, curses.COLOR_GREEN, curses.COLOR_BLACK) # the 1 represents the pair like pair of green and white
