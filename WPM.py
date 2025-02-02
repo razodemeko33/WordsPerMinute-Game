@@ -82,7 +82,7 @@ stdscr.addstr(2, 0, "You completed the text! Press any key to continue...")
 key = stdscr.getkey()
 if ord(key) == 27:
     break
-stdscr.getkey()
+
 
 
 wrapper(main) # passing main inside wrapper
