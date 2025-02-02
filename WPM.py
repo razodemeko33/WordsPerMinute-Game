@@ -12,6 +12,10 @@ def display_text(stdscr, target_text, current_text, wpm=0):
     stdscr.addstr(target_text)
 
     for i, char in enumerate (current_text): #if ["a","b","c"] cha so i would index 0 and then char would have a 
+       correct_char = target[i]
+        color = curses.color_pair(1)
+        if char != correct_char:
+            color = curses.color_pair(2)
         stdscr.addstr(0, i, char, curses.color_pair(1)) #(0,i) pverwrite garcha line stdscr.addstr(y, x, text, color) here y=row and x=column
 
 
